@@ -1,0 +1,5 @@
+ultralytics==8.1.39
+opencv-python
+streamlit
+pandas
+tqdm

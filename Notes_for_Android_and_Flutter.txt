@@ -1,0 +1,15 @@
+Android (Flutter) Integration - Overview
+
+Option A (Edge): Convert the YOLO model to TFLite and run inference on-device.
+
+Option B (Server): Run the Python detection service (a REST API) on a server. The Android app uploads video or sends frames; server returns counts and annotated frames.
+
+Minimal server sketch:
+- Flask API: /upload (POST) accepts video, runs detect_and_count.py, returns JSON counts and optionally annotated video URL
+
+Flutter side:
+- File picker to choose video
+- Upload to server (multipart/form-data)
+- Show progress and display results
+
+Security: Protect your server and API (auth tokens), and if using OpenAI API keys keep them only on server side.
