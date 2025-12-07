@@ -1,5 +1,5 @@
-ultralytics==8.1.39
-opencv-python
+ultralytics==8.1.0
+opencv-python-headless
+numpy
+pillow
 streamlit
-pandas
-tqdm
